@@ -105,6 +105,17 @@ main {
   width: 50%;
 }
 
+.container .profile-data .info .data .networking{
+  margin-top: 25px;
+  display: flex;
+  justify-content:space-around;
+}
+
+.container .profile-data .info .data .networking h4{
+  font-weight: bold;
+}
+
+
 .container .profile-data .info img{
   width: 50%;
   border-radius: 50%;

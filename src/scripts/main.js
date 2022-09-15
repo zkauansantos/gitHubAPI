@@ -31,6 +31,7 @@ function validateEmptyInput(userName){
 
 async function getUserData(userName) {
    const userReponse = await getUser(userName)
+   console.log(userReponse)
    const repositoriesResponse = await getRepos(userName)
   
     if(userReponse.message === 'Not Found'){
