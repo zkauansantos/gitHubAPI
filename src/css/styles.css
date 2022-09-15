@@ -111,9 +111,14 @@ main {
   justify-content:space-around;
 }
 
-.container .profile-data .info .data .networking h4{
+.container .profile-data .info .data .networking strong{
   font-weight: bold;
 }
+.container .profile-data .info .data .networking .follow{
+  font-weight: initial;
+}
+
+
 
 
 .container .profile-data .info img{
@@ -209,7 +214,7 @@ main {
 .container .profile-data .events ul{
   display: flex;
   flex-wrap: wrap;
-  text-align: left;
+  text-align: center;
 }
 
 .container .profile-data .events h2{
@@ -255,10 +260,16 @@ main {
 
 @media (max-width: 768px) {
   .container header #input-search,
-  .container header #btn-search
-  {
+  .container header #btn-search{
     width: 100%;
   }
+
+  .container .profile-data .info .data .networking{
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 15px;
+  }
+  
 }
 
 @media (max-width: 425px) {

@@ -7,10 +7,8 @@ const screen = {
                             <h1>${user.name ?? 'Não possui nome cadastrado 😭'}</h1>
                             <p>${user.bio ?? 'Não possui bio cadastrada 😭'}</p>
                             <div class="networking">
-                                <h4> Seguindo: </h4>
-                                <p>${user.following}</p>
-                                <h4> Seguidores: </h4>
-                                <p>${user.followers}</p>
+                                <strong> Seguindo: <span class="follow">${user.following}</span></strong>
+                                <strong> Seguidores: <span class="follow">${user.followers}</span></strong>
                             </div>    
                         </div>
                     </div>`
@@ -23,6 +21,14 @@ const screen = {
                                                                         <h2>Repositórios</h2>
                                                                         <ul>${repositoriesItens}</ul>
                                                                     </div>`
+    
+    let eventsRecents = ""
+    user.events.forEach(event => eventsRecents += `<li>${event.repo.name}</li>`) 
+    
+    if(user.events.length > 0) this.userProfile.innerHTML += `<div class="events">
+                                                                <h2> Eventos </h2>
+                                                                <ul>${eventsRecents}</ul>  
+                                                              </div>`
     }
 }
 export {screen}

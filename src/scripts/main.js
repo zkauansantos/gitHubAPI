@@ -1,13 +1,14 @@
 import {getUser} from '/src/scripts/services/user.js'
 import {getRepos} from '/src/scripts/services/repository.js'
+import {getEvents} from '/src/scripts/services/events.js'
 import {user} from '/src/scripts/objects/user.js'
 import {screen} from '/src/scripts/objects/screen.js'
-
 
 document.getElementById('btn-search').addEventListener('click', ()=> {
     const userName = document.getElementById('input-search').value 
      if (validateEmptyInput(userName)) return
     getUserData(userName)
+    console.log(getEvents(userName))
 })
 
 // Event button "Enter"
@@ -31,9 +32,9 @@ function validateEmptyInput(userName){
 
 async function getUserData(userName) {
    const userReponse = await getUser(userName)
-   console.log(userReponse)
    const repositoriesResponse = await getRepos(userName)
-  
+   const eventsResponse = await getEvents(userName)
+
     if(userReponse.message === 'Not Found'){
         alert('Este usuário não existe')
         return
@@ -41,7 +42,11 @@ async function getUserData(userName) {
 
    user.setInfo(userReponse)
    user.setRepositories(repositoriesResponse)
+   user.setEvents(eventsResponse)
+   console.log(eventsResponse)
    screen.renderUser(user)
 }
+
+
 
 
