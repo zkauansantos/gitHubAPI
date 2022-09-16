@@ -114,7 +114,7 @@ main {
 .container .profile-data .info .data .networking strong{
   font-weight: bold;
 }
-.container .profile-data .info .data .networking .follow{
+.container .profile-data .info .data .networking span{
   font-weight: initial;
 }
 
@@ -172,6 +172,7 @@ main {
 .container .profile-data .repositories h2{
   margin-bottom: 30px;
   text-align: center;
+  font-weight: 700;
 }
 
 .container .profile-data .repositories ul{
@@ -214,16 +215,19 @@ main {
 .container .profile-data .events ul{
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
+  margin-left: 125px;
 }
 
 .container .profile-data .events h2{
   margin-bottom: 30px;
   text-align: center;
+  font-weight: 700;
+  color: grey;
 }
 
-.container .profile-data .events ul li {
-  width: 100%;  
+.container .profile-data .events ul li { 
+  width: 100%;
+  display: flex;
   margin: 5px 0;
 }
 
@@ -231,20 +235,15 @@ main {
   font-weight: 700;
 }
 
-.container .profile-data .events ul li h4,
-.container .profile-data .events ul li p{
-  margin-bottom: 10px;
-}
-
-
-.container .profile-data.hide{
-  display: none;
+.container .profile-data .events ul li span{
+  color: grey;
+  margin-left: 50px;
 }
 
 @media (max-width: 1280px) {
   .container {
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     border-radius: 20px;
   }
 
@@ -256,6 +255,13 @@ main {
     font-size: 24px;
     text-align: center;
   }
+
+  .container .profile-data .events ul{
+    margin-left: 200px;
+  }
+
+
+
 }
 
 @media (max-width: 768px) {
@@ -263,12 +269,25 @@ main {
   .container header #btn-search{
     width: 100%;
   }
-
   .container .profile-data .info .data .networking{
     flex-direction: column;
     flex-wrap: wrap;
     font-size: 15px;
   }
+
+  .container .profile-data .events ul{
+    margin-left: 15px;
+  }
+
+  .container .profile-data .events ul li{
+    flex-direction: column;
+  }
+
+.container .profile-data .events ul li span{
+
+  margin-left: 0px;
+}
+
   
 }
 

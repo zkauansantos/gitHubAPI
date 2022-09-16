@@ -7,8 +7,7 @@ import {screen} from '/src/scripts/objects/screen.js'
 document.getElementById('btn-search').addEventListener('click', ()=> {
     const userName = document.getElementById('input-search').value 
      if (validateEmptyInput(userName)) return
-    getUserData(userName)
-    console.log(getEvents(userName))
+         getUserData(userName)
 })
 
 // Event button "Enter"
