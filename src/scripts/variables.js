@@ -1,4 +1,4 @@
 const baseUrl = 'https://api.github.com/users' 
-const repositoriesQuantity = 15
+const repositoriesQuantity = 20
 
 export{baseUrl, repositoriesQuantity}

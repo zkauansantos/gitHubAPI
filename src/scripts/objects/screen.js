@@ -43,26 +43,3 @@ const screen = {
 };
 
 export { screen };
-
-/*
-`<div class="events">
-    <h2> Eventos </h2>
-    <ul>
-        <li><strong>${event.repo.name}</strong>
-            <span>${event.payload.commits[0].message}</span>
-        </li>`
-        <li><strong>${event.repo.name}</strong>
-            <span>${event.payload.commits[0].message}</span>
-        </li>`
-        <li><strong>${event.repo.name}</strong>
-            <span>${event.payload.commits[0].message}</span>
-        </li>`
-        <li><strong>${event.repo.name}</strong>
-            <span>${event.payload.commits[0].message}</span>
-        </li>`
-        <li><strong>${event.repo.name}</strong>
-            <span>${event.payload.commits[0].message}</span>
-        </li>`
-    </ul>  
-</div>`
-*/
