@@ -13,14 +13,21 @@ const screen = {
                                     </div>
                                 </div>`;
 
-    let repositoriesItens = "";
-    user.repositories.forEach((repo) => repositoriesItens += `<li><a href= "${repo.html_url}" target="_blank">${repo.name}</a></li>`
+    let repositoriesItensAndInteractions = "";
+    user.repositories.forEach((repo) => repositoriesItensAndInteractions += `<li><a href= "${repo.html_url}" target="_blank">${repo.name}
+                                                                                    <p> <i class="fa-solid fa-star">🍴${repo.forks}</i>
+                                                                                         <i class="fa-solid fa-star">📚${repo.language}</i>
+                                                                                         <i class="fa-solid fa-star">⭐${repo.stars}</i>
+                                                                                         <i class="fa-solid fa-star">👀${repo.watchers}</i>
+                                                                                    </p>
+                                                                                  </a>
+                                                                              </li>`
     );
 
     if (user.repositories.length > 0)
       this.userProfile.innerHTML += `<div class="repositories section">
                                         <h2>Repositórios</h2>
-                                        <ul>${repositoriesItens}</ul>
+                                        <ul>${repositoriesItensAndInteractions}</ul>
                                      </div>`;
 
     let eventsRecents = "";

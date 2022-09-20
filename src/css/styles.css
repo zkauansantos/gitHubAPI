@@ -185,22 +185,20 @@ main {
 .container .profile-data .repositories ul li a{
   padding: 20px;
   border: 1px solid grey;  
-  margin: 20px;
+  margin: 10px;
   display: block;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
 }
 
+.container .profile-data .repositories ul li p{
+  margin-top: 10px;
+}
 .container .profile-data .repositories ul li a:hover{
   background-color:hotpink;
   color: #fff
 }
 
-.container .profile-data .repositories ul li a h4{
-  font-weight: 700;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
 
 .container .profile-data .repositories ul li a i{
   display: inline-block;

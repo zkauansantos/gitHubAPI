@@ -18,13 +18,13 @@ const user = {
         this.userName = gitHubUser.login
         this.followers = gitHubUser.followers
         this.following = gitHubUser.following
-        this.forks = gitHubUser.forks
-        this.watchers = gitHubUser.watchers
-        this.star = gitHubUser.stargazers_count
-        this.language = gitHubUser.language
     },
     setRepositories(repositories){
         this.repositories= repositories
+        this.forks = repositories.forks
+        this.watchers = repositories.watchers
+        this.star = repositories.stargazers_count
+        this.language = repositories.language
     },
     setEvents(events){
         this.events = events
