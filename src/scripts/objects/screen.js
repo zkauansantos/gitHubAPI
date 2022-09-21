@@ -17,7 +17,7 @@ const screen = {
     user.repositories.forEach((repo) => repositoriesItensAndInteractions += `<li><a href= "${repo.html_url}" target="_blank">${repo.name}
                                                                                     <p> <i class="fa-solid fa-star">🍴${repo.forks}</i>
                                                                                          <i class="fa-solid fa-star">📚${repo.language}</i>
-                                                                                         <i class="fa-solid fa-star">⭐${repo.stars}</i>
+                                                                                         <i class="fa-solid fa-star">⭐${repo.stargazers_count}</i>
                                                                                          <i class="fa-solid fa-star">👀${repo.watchers}</i>
                                                                                     </p>
                                                                                   </a>
