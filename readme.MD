@@ -12,7 +12,7 @@ Desafio feito para o curso de front-end DevQuest, modulo de JavaScript Avançado
 
 ## PROJETO FINALIZADO ABAIXO  
 
-[<img src="./gif/apiGIT.gif">]()
+[<img src="./gif/apiGit.gif">]()
 
 <br>
 <br>
