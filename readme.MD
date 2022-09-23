@@ -12,7 +12,7 @@ Desafio feito para o curso de front-end DevQuest, modulo de JavaScript Avançado
 
 ## PROJETO FINALIZADO ABAIXO  
 
-[<img src="./gif/apiGit.gif">]()
+[<img src="./gif/apiGit.gif">](https://zkauansantos.github.io/gitHubAPI/)
 
 <br>
 <br>
@@ -30,3 +30,5 @@ Desafio feito para o curso de front-end DevQuest, modulo de JavaScript Avançado
 Com este projeto pude ter a oportunidade de fazer um projeto de consumir uma API real totalmente do 0, e me saí muito bem estou satisfeito com o resultado, agora praticar mais e mais 
 
 ## LINK HOSPEDADO NO GITHUB PAGES 
+
+https://zkauansantos.github.io/gitHubAPI/
