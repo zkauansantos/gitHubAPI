@@ -1,5 +1,5 @@
 const user = {
-    avatarUrl: '',
+    avatarUrl: '' ,
     name: '',
     bio: '',
     userName: '',
